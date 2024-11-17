@@ -3,7 +3,7 @@ import { NavLink, useLocation } from "react-router-dom";
 
 const Header = () => {
   const { pathname } = useLocation();
-  const [isOpenSidebar, setIsOpenSidebar] = useState(true);
+  const [isOpenSidebar, setIsOpenSidebar] = useState(false);
 
   const handleOpenSidebar = () => {
     setIsOpenSidebar(!isOpenSidebar);
