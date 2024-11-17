@@ -11,7 +11,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="w-full border-b-[1px] border-gray-700 text-gray-500">
+      <header className="fixed top-0 z-50 backdrop-blur-sm w-full border-b-[1px] border-gray-700 text-gray-500">
         <div className="flex relative container">
           <span className="p-4 md:pr-16 border-gray-700 md:border-r-[1px]">
             mahdi-bashiri
@@ -70,7 +70,7 @@ const Header = () => {
           <nav
             className={`${
               isOpenSidebar ? "right-0" : "-right-[200px]"
-            } fixed duration-300 z-10 h-screen p-4 bg-[#011423] border-l border-gray-600 top-0`}
+            } fixed duration-300 z-10 h-screen p-4 pl-14 bg-[#011423] border-l border-gray-600 top-0`}
           >
             <ul className="flex flex-col justify-start text-center">
               <li
@@ -124,7 +124,7 @@ const Header = () => {
             onClick={handleOpenSidebar}
             className={`${
               isOpenSidebar ? "left-0" : "-left-full"
-            } duration-300 fixed top-0 z-5 bg-gray-900/60 backdrop-blur-sm h-screen w-full`}
+            } block duration-300 fixed top-0 z-5 bg-gray-900/70 backdrop-blur-md h-screen w-full`}
           ></span>
         </div>
       </header>

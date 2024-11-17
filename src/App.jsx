@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import routes from "./routes/route";
-import HomePage from "./pages/Home";
 import Layout from "./layout/layout";
+import { BackgroundMotion } from "./components/backgroundMotion";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -14,6 +14,7 @@ function App() {
           <Route key={`${i}+${route.path}`} {...route} />
         ))}
       </Routes>
+      <BackgroundMotion />
     </Layout>
   );
 }
