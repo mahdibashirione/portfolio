@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <>
       <header className="w-full border-b-[1px] border-gray-700 text-gray-500">
-        <div className="flex relative">
+        <div className="flex relative container">
           <span className="p-4 md:pr-16 border-gray-700 md:border-r-[1px]">
             mahdi-bashiri
           </span>
