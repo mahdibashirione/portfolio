@@ -21,7 +21,7 @@ const Minigame = () => {
             start-game
           </button>
         </div>
-        <div className="col-span-1">
+        <div className="col-span-1 text-nowrap">
           {/* helep */}
           <div className="w-full p-4 text-gray-400 bg-zinc-900/40 rounded-lg text-[12px] lg:text-sm">
             <span className="block">// use keyboard</span>
@@ -62,7 +62,7 @@ const Minigame = () => {
           </div>
           {/* skip BTN */}
           <div className="flex-1 flex justify-end items-end">
-            <button className="text-sm lg:text-base mt-12 lg:mt-24 duration-200 active:scale-90 border text-gray-400 py-1 px-3 rounded-lg border-gray-400">
+            <button className="text-sm lg:text-base mt-4 lg:mt-8 duration-200 active:scale-90 border text-gray-400 py-1 px-3 rounded-lg border-gray-400">
               skip
             </button>
           </div>
