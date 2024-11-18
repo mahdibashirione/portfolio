@@ -30,8 +30,10 @@ const HomePage = () => {
                 <span className="mr-2 text-green-600">githubLink</span>
                 <span className="mr-2 text-white">=</span>
                 <Link
+                  rel="noopener noreferrer"
+                  target="_blank"
                   className="inline-block text-secondary lg:hover:scale-105 lg:hover:ml-2 transition-all duration-200"
-                  to=""
+                  to="https://github.com/mahdibashirione"
                 >
                   "github.com/mahdibashirione"
                 </Link>
