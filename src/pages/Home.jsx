@@ -4,9 +4,9 @@ import Minigame from "../components/miniGame";
 
 const HomePage = () => {
   return (
-    <section className="z-20 flex flex-col md:flex-row gap-12 pt-[calc(2rem+58px)] pb-12 items-center container px-8">
+    <section className="z-20 min-h-[calc(100vh-37px)] flex flex-col md:flex-row gap-12 pt-[calc(2rem+58px)] pb-12 items-center container px-8">
       {/* title */}
-      <div className="flex-1">
+      <div className="flex-1 z-30">
         <div className="flex justify-end">
           <div>
             <span className="xl:text-base text-sm text-gray-300">

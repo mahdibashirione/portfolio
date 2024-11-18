@@ -70,7 +70,7 @@ const Header = () => {
           <nav
             className={`${
               isOpenSidebar ? "right-0" : "-right-[200px]"
-            } fixed duration-300 z-10 h-screen p-4 pl-14 bg-[#011423] border-l border-gray-600 top-0`}
+            } md:hidden fixed duration-300 z-10 h-screen p-4 pl-14 bg-background border-l border-gray-600 top-0`}
           >
             <ul className="flex flex-col justify-start text-center">
               <li
@@ -124,7 +124,7 @@ const Header = () => {
             onClick={handleOpenSidebar}
             className={`${
               isOpenSidebar ? "left-0" : "-left-full"
-            } block duration-300 fixed top-0 z-5 bg-gray-900/70 backdrop-blur-md h-screen w-full`}
+            } md:hidden block duration-300 fixed top-0 z-5 bg-gray-900/70 backdrop-blur-md h-screen w-full`}
           ></span>
         </div>
       </header>
