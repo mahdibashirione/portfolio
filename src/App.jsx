@@ -14,7 +14,7 @@ function App() {
           <Route key={`${i}+${route.path}`} {...route} />
         ))}
       </Routes>
-      <BackgroundMotion />
+      {/* <BackgroundMotion /> */}
     </Layout>
   );
 }

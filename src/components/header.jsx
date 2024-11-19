@@ -62,19 +62,31 @@ const Header = () => {
               onClick={handleOpenSidebar}
               className="active:scale-90 duration-300 flex flex-col justify-center p-4 gap-2"
             >
-              <span className="w-6 h-[2px] block bg-gray-500"></span>
-              <span className="w-6 h-[2px] block bg-gray-500"></span>
-              <span className="w-6 h-[2px] block bg-gray-500"></span>
+              <span
+                className={`${
+                  isOpenSidebar && "rotate-45 translate-y-2.5"
+                } duration-300 w-6 h-[2px] block bg-gray-500`}
+              ></span>
+              <span
+                className={`${
+                  isOpenSidebar && "opacity-0"
+                } duration-300 w-6 h-[2px] block bg-gray-500`}
+              ></span>
+              <span
+                className={`${
+                  isOpenSidebar && "-rotate-45 -translate-y-2.5"
+                } duration-300 w-6 h-[2px] block bg-gray-500`}
+              ></span>
             </button>
           </div>
           <nav
             className={`${
-              isOpenSidebar ? "right-0" : "-right-[200px]"
-            } md:hidden fixed duration-300 z-10 h-screen p-4 pl-14 bg-background border-l border-gray-600 top-0`}
+              isOpenSidebar ? "max-h-screen" : "max-h-0"
+            } overflow-hidden md:hidden fixed w-screen top-full duration-300 z-10 h-screen bg-background border-l border-gray-600`}
           >
-            <ul className="flex flex-col justify-start text-center">
+            <ul className="flex flex-col text-center">
               <li
-                className={`border-r-2 ${
+                className={`border-b-2 ${
                   pathname === "/"
                     ? "border-secondary text-secondary"
                     : "border-transparent"
@@ -89,7 +101,7 @@ const Header = () => {
                 </NavLink>
               </li>
               <li
-                className={`border-r-2 ${
+                className={`border-b-2 ${
                   pathname === "/about-me"
                     ? "border-secondary text-secondary"
                     : "border-transparent"
@@ -104,7 +116,7 @@ const Header = () => {
                 </NavLink>
               </li>
               <li
-                className={`border-r-2 ${
+                className={`border-b-2 ${
                   pathname === "/projects"
                     ? "border-secondary text-secondary"
                     : "border-transparent"
@@ -120,12 +132,6 @@ const Header = () => {
               </li>
             </ul>
           </nav>
-          <span
-            onClick={handleOpenSidebar}
-            className={`${
-              isOpenSidebar ? "left-0" : "-left-full"
-            } md:hidden block duration-300 fixed top-0 z-5 bg-gray-900/70 backdrop-blur-md h-screen w-full`}
-          ></span>
         </div>
       </header>
     </>

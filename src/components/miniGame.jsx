@@ -15,7 +15,7 @@ function Screw({ className }) {
 const Minigame = () => {
   return (
     <article className="flex-1 z-10">
-      <div className="relative p-6 grid gap-2 grid-cols-2 backdrop-blur-[1.5px] lg:w-[400px] rounded-lg w-[350px] lg:h-[400px] h-[350px]  bg-gradient-to-tr from-blue-600/25 to-green-600/25">
+      <div className="z-20 relative p-6 grid gap-2 grid-cols-2 backdrop-blur-[1.5px] lg:w-[400px] rounded-lg w-[350px] lg:h-[400px] h-[350px]  bg-gradient-to-tr from-blue-600/25 to-green-600/25">
         <div className="col-span-1 bg-background rounded-lg shadow-md relative">
           <button className="active:scale-90 duration-200 bg-secondary bottom-12 absolute right-1/2 translate-x-1/2 text-nowrap py-1 px-2 text-sm lg:text-base rounded-md">
             start-game
