@@ -15,9 +15,9 @@
   .animate-gradient {
     background-size: 400%;
     transition: all;
-    -webkit-animation: animation 5s ease infinite;
-    -moz-animation: animation 5s ease infinite;
-    animation: gradient 5s ease infinite;
+    -webkit-animation: animation 12.5s ease-in-out infinite;
+    -moz-animation: animation 12.5s ease-in-out infinite;
+    animation: gradient 12.5s ease-in-out infinite;
   }
 
   @keyframes gradient {
@@ -26,11 +26,11 @@
       background: #0284c7;
     }
 
-    33% {
-      background: #f43f5e;
+    30% {
+      background: #ff4d6a;
     }
 
-    66% {
+    80% {
       background: #9333ea;
     }
   }
