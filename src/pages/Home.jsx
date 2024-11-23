@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import image from "../assets/3.jpg";
 import Minigame from "../components/miniGame";
+import { motion } from "framer-motion";
 
 const HomePage = () => {
   return (
@@ -9,34 +9,83 @@ const HomePage = () => {
       <div className="flex-1 z-30">
         <div className="flex justify-end">
           <div>
-            <span className="xl:text-base text-sm text-gray-300">
+            <motion.span
+              transition={{ duration: 0.5 }}
+              animate={{ scaleY: 1 }}
+              initial={{ scaleY: 0 }}
+              className="block xl:text-base text-sm text-gray-300"
+            >
               Hi all. I am
-            </span>
-            <h1 className="text-4xl text-white lg:text-6xl xl:text-7xl">
+            </motion.span>
+            <motion.h1
+              transition={{ duration: 0.5, delay: 0.5 }}
+              animate={{ opacity: 100, translateX: 0 }}
+              initial={{ opacity: 0, translateX: -100 }}
+              className="text-4xl text-white lg:text-6xl xl:text-7xl"
+            >
               Mahdi Bashiri
-            </h1>
-            <span className="text-lg text-primary xl:text-2xl">
+            </motion.h1>
+            <motion.span
+              transition={{ duration: 0.5, delay: 0.75 }}
+              animate={{ scaleY: 1 }}
+              initial={{ scaleY: 0 }}
+              className="block text-lg text-primary xl:text-2xl"
+            >
               {">"} Front-End Developer
-            </span>
+            </motion.span>
             <div className="mt-12 text-sm md:text-base">
-              <p className="text-sm text-gray-500">
+              <motion.p
+                transition={{ duration: 0.5, delay: 1 }}
+                animate={{ scaleY: 1 }}
+                initial={{ scaleY: 0 }}
+                className="text-sm text-gray-500"
+              >
                 // complete the game to continue
-              </p>
-              <p className="text-sm text-gray-500 my-1">
+              </motion.p>
+              <motion.p
+                transition={{ duration: 0.5, delay: 1.25 }}
+                animate={{ scaleY: 1 }}
+                initial={{ scaleY: 0 }}
+                className="text-sm text-gray-500 my-1"
+              >
                 // you can also see it on my Github page
-              </p>
+              </motion.p>
               <div>
-                <span className="mr-2 text-primary">const</span>
-                <span className="mr-2 text-green-600">githubLink</span>
-                <span className="mr-2 text-white">=</span>
-                <Link
+                <motion.span
+                  transition={{ duration: 0.5, delay: 1.25 }}
+                  animate={{ opacity: 1, translateX: 0 }}
+                  initial={{ opacity: 0, translateX: -100 }}
+                  className="inline-block mr-2 text-primary"
+                >
+                  const
+                </motion.span>
+                <motion.span
+                  transition={{ duration: 0.5, delay: 1.5 }}
+                  animate={{ opacity: 1, translateY: 0 }}
+                  initial={{ opacity: 0, translateY: -100 }}
+                  className="inline-block mr-2 text-green-600"
+                >
+                  githubLink
+                </motion.span>
+                <motion.span
+                  transition={{ duration: 0.5, delay: 1.5 }}
+                  animate={{ opacity: 1, translateY: 0 }}
+                  initial={{ opacity: 0, translateY: 100 }}
+                  className="inline-block mr-2 text-white"
+                >
+                  =
+                </motion.span>
+                <motion.a
+                  transition={{ duration: 0.3, delay: 1.5 }}
+                  animate={{ opacity: 1, translateX: 0 }}
+                  initial={{ opacity: 0, translateX: 65 }}
                   rel="noopener noreferrer"
                   target="_blank"
                   className="inline-block text-secondary lg:hover:scale-105 lg:hover:ml-2 transition-all duration-200"
-                  to="https://github.com/mahdibashirione"
+                  href="https://github.com/mahdibashirione"
                 >
                   "github.com/mahdibashirione"
-                </Link>
+                </motion.a>
               </div>
             </div>
           </div>

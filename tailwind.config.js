@@ -14,6 +14,13 @@ export default {
         primary: "#4557AB",
         secondary: "#F5A664",
       },
+      keyframes: {
+        gradient: {
+          "0%, 100%": { background: "#10b981" },
+          "50%": { background: "#9333ea" },
+        },
+        animation: { gradient: "gradient 5s ease-in-out infinite" },
+      },
     },
   },
   plugins: [addVariablesForColors],

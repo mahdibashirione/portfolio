@@ -12,4 +12,26 @@
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
   }
+  .animate-gradient {
+    background-size: 400%;
+
+    -webkit-animation: animation 5s ease infinite;
+    -moz-animation: animation 5s ease infinite;
+    animation: gradient 5s ease infinite;
+  }
+
+  @keyframes gradient {
+    0%,
+    100% {
+      background: #6a94d3;
+    }
+
+    33% {
+      background: #a21caf;
+    }
+
+    66% {
+      background: #7e22ce;
+    }
+  }
 }
