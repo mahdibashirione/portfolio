@@ -17,13 +17,15 @@ const Minigame = () => {
   return (
     <article className="flex-1 z-10">
       <motion.div
-        transition={{ duration: 0.5, delay: 0.75 }}
-        animate={{ opacity: 1, translateX: 0 }}
-        initial={{ opacity: 0, translateX: 100 }}
+        transition={{ duration: 0.75, delay: 0.75 }}
+        animate={{ opacity: 1 }}
+        initial={{ opacity: 0 }}
         className="relative w-fit"
       >
         {/* box shadow gradient */}
         <div class="-z-10 absolute inset-0 rounded-3xl transition-all animate-gradient opacity-50 blur-3xl"></div>
+        {/* border gradient */}
+        <div class="-z-10 absolute -inset-[2px] rounded-xl transition-all animate-gradient"></div>
         {/* content */}
         <div className="z-20 rounded-xl border-transparent p-6 grid gap-2 grid-cols-2 backdrop-blur-[1.5px] lg:w-[400px] w-[350px] lg:h-[400px] h-[350px]  bg-gradient-to-tr from-blue-900 to-green-900">
           <div className="col-span-1 bg-background rounded-lg shadow-md relative">
